@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 5vw;
+}
+
+.striped-text {
+  font-size: 14vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  background: linear-gradient(to bottom, red 33%, white 33% 66%, blue 66%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 1em;
+}
+
+.contact-info {
+  font-size: 5vw;
+  line-height: 1.5;
+}
+
+.contact-info a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .striped-text {
+    font-size: 180px;
+  }
+
+  .contact-info {
+    font-size: 24px;
+  }
+}
